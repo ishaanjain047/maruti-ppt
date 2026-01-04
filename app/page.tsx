@@ -13,7 +13,7 @@ export default function Home() {
               Maruti Infrastructure Automation Platform
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed">
-              From weeks of delays to 60 seconds with AI-powered automation
+              From weeks of delays to minutes with AI-powered agents and automations
             </p>
 
             {/* Problem Highlight */}
@@ -135,10 +135,154 @@ export default function Home() {
                 </svg>
               </div>
 
-              {/* Step 2 */}
+              {/* Step 2: VPC Allocation */}
+              <div className="flex items-start gap-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">
+                  2
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-white mb-3">Auto VPC & Subnet Allocation</h3>
+                  <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                    <p className="text-slate-300 text-lg mb-4">
+                      Based on the environment selected, VPCs and subnets are automatically allocated from predefined network ranges
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="bg-slate-900/50 rounded-lg p-4 border border-slate-700">
+                        <div className="font-semibold text-emerald-400 mb-2">Production</div>
+                        <div className="text-slate-300 font-mono text-sm">10.1-49.X.X</div>
+                        <div className="text-xs text-slate-500 mt-1">High availability zones</div>
+                      </div>
+                      <div className="bg-slate-900/50 rounded-lg p-4 border border-slate-700">
+                        <div className="font-semibold text-blue-400 mb-2">Staging</div>
+                        <div className="text-slate-300 font-mono text-sm">10.50-99.X.X</div>
+                        <div className="text-xs text-slate-500 mt-1">Pre-production testing</div>
+                      </div>
+                      <div className="bg-slate-900/50 rounded-lg p-4 border border-slate-700">
+                        <div className="font-semibold text-yellow-400 mb-2">QA</div>
+                        <div className="text-slate-300 font-mono text-sm">10.100-149.X.X</div>
+                        <div className="text-xs text-slate-500 mt-1">Quality assurance</div>
+                      </div>
+                      <div className="bg-slate-900/50 rounded-lg p-4 border border-slate-700">
+                        <div className="font-semibold text-purple-400 mb-2">Sandbox</div>
+                        <div className="text-slate-300 font-mono text-sm">10.150-199.X.X</div>
+                        <div className="text-xs text-slate-500 mt-1">Development & experiments</div>
+                      </div>
+                    </div>
+                    <div className="mt-4 p-3 bg-cyan-500/10 border border-cyan-500/30 rounded-lg">
+                      <p className="text-cyan-300 text-sm">
+                        <span className="font-semibold">Smart Allocation:</span> Prevents IP conflicts by automatically selecting the next available VPC ID within the environment range
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="flex justify-center">
+                <svg className="w-8 h-8 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+
+              {/* Step 3: T-shirt Sizing */}
+              <div className="flex items-start gap-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">
+                  3
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-white mb-3">Environment-Based T-Shirt Sizing</h3>
+                  <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                    <p className="text-slate-300 text-lg mb-4">
+                      Resource configurations are automatically selected based on the environment and workload requirements
+                    </p>
+                    <div className="space-y-4">
+                      <div className="bg-slate-900/50 rounded-lg p-4 border border-slate-700">
+                        <div className="flex items-center justify-between mb-3">
+                          <span className="font-semibold text-white">Production</span>
+                          <span className="px-3 py-1 bg-emerald-500/20 border border-emerald-500/30 rounded-full text-emerald-400 text-sm font-bold">
+                            LARGE
+                          </span>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-3 text-sm">
+                          <div>
+                            <div className="text-slate-500">EC2</div>
+                            <div className="text-slate-300 font-mono">t3.large</div>
+                          </div>
+                          <div>
+                            <div className="text-slate-500">RDS</div>
+                            <div className="text-slate-300 font-mono">db.m6g.large</div>
+                          </div>
+                          <div>
+                            <div className="text-slate-500">Cache</div>
+                            <div className="text-slate-300 font-mono">cache.m6g.large</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-slate-900/50 rounded-lg p-4 border border-slate-700">
+                        <div className="flex items-center justify-between mb-3">
+                          <span className="font-semibold text-white">Staging / QA</span>
+                          <span className="px-3 py-1 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-400 text-sm font-bold">
+                            MEDIUM
+                          </span>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-3 text-sm">
+                          <div>
+                            <div className="text-slate-500">EC2</div>
+                            <div className="text-slate-300 font-mono">t3.medium</div>
+                          </div>
+                          <div>
+                            <div className="text-slate-500">RDS</div>
+                            <div className="text-slate-300 font-mono">db.t4g.medium</div>
+                          </div>
+                          <div>
+                            <div className="text-slate-500">Cache</div>
+                            <div className="text-slate-300 font-mono">cache.t4g.medium</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-slate-900/50 rounded-lg p-4 border border-slate-700">
+                        <div className="flex items-center justify-between mb-3">
+                          <span className="font-semibold text-white">Sandbox</span>
+                          <span className="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full text-purple-400 text-sm font-bold">
+                            SMALL
+                          </span>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-3 text-sm">
+                          <div>
+                            <div className="text-slate-500">EC2</div>
+                            <div className="text-slate-300 font-mono">t3.small</div>
+                          </div>
+                          <div>
+                            <div className="text-slate-500">RDS</div>
+                            <div className="text-slate-300 font-mono">db.t4g.small</div>
+                          </div>
+                          <div>
+                            <div className="text-slate-500">Cache</div>
+                            <div className="text-slate-300 font-mono">cache.t4g.small</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-4 p-3 bg-amber-500/10 border border-amber-500/30 rounded-lg">
+                      <p className="text-amber-300 text-sm">
+                        <span className="font-semibold">Cost Optimization:</span> Right-sized resources for each environment reduce unnecessary cloud spend
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="flex justify-center">
+                <svg className="w-8 h-8 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+
+              {/* Step 4 */}
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">
-                  2
+                  4
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-white mb-3">AI Analyzes & Identifies Components</h3>
@@ -187,10 +331,10 @@ export default function Home() {
                 </svg>
               </div>
 
-              {/* Step 3 */}
+              {/* Step 5 */}
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">
-                  3
+                  5
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-white mb-3">AI Detects All Connections</h3>
@@ -223,10 +367,10 @@ export default function Home() {
                 </svg>
               </div>
 
-              {/* Step 4 */}
+              {/* Step 6 */}
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">
-                  4
+                  6
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-white mb-3">Complete Infrastructure Plan Generated</h3>
@@ -1130,35 +1274,6 @@ resource "aws_security_group_rule" "app_to_db" {
                   Same order every time ensures consistent, predictable deployments
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <section className="py-16 bg-slate-950 border-t border-slate-800">
-        <div className="container mx-auto px-6 md:px-12 lg:px-24">
-          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-3xl font-bold text-white mb-4">Ready to Transform Your Infrastructure?</h3>
-            <p className="text-slate-400 mb-8">
-              From weeks of delays to 60 seconds of AI-powered automation
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <div className="px-6 py-3 bg-slate-800 border border-slate-700 rounded-lg">
-                <div className="text-sm text-slate-500">Average Time Saved</div>
-                <div className="text-2xl font-bold text-primary-400">4 weeks</div>
-              </div>
-              <div className="px-6 py-3 bg-slate-800 border border-slate-700 rounded-lg">
-                <div className="text-sm text-slate-500">Success Rate</div>
-                <div className="text-2xl font-bold text-emerald-400">100%</div>
-              </div>
-              <div className="px-6 py-3 bg-slate-800 border border-slate-700 rounded-lg">
-                <div className="text-sm text-slate-500">Manual Effort</div>
-                <div className="text-2xl font-bold text-orange-400">-90%</div>
-              </div>
-            </div>
-            <div className="mt-12 text-slate-500 text-sm">
-              Maruti Suzuki Infrastructure Automation Platform
             </div>
           </div>
         </div>
