@@ -10,10 +10,10 @@ export default function Home() {
               <span className="text-primary-400 text-sm font-medium">Infrastructure Automation Platform</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
-              From Weeks to Seconds
+              Maruti Infrastructure Automation Platform
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed">
-              How AI-powered tag-based resource discovery eliminates infrastructure delays
+              From weeks of delays to 60 seconds with AI-powered automation
             </p>
 
             {/* Problem Highlight */}
@@ -95,6 +95,171 @@ export default function Home() {
           <svg className="w-6 h-6 mx-auto text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
+        </div>
+      </section>
+
+      {/* Architecture Analysis Flow */}
+      <section className="py-24 bg-gradient-to-b from-slate-900 to-slate-800">
+        <div className="container mx-auto px-6 md:px-12 lg:px-24">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">How It Works</h2>
+              <p className="text-xl text-slate-400">Upload your architecture diagram and let AI do the rest</p>
+            </div>
+
+            {/* Step-by-step flow */}
+            <div className="space-y-8">
+              {/* Step 1 */}
+              <div className="flex items-start gap-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">
+                  1
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-white mb-3">Upload Architecture Diagram</h3>
+                  <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                    <p className="text-slate-300 text-lg mb-4">
+                      Upload your complete architecture diagram in any format (PNG, PDF, Draw.io, etc.)
+                    </p>
+                    <div className="flex items-center gap-3 text-slate-400">
+                      <span className="text-2xl">📊</span>
+                      <span>Architecture diagram showing all components and their connections</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="flex justify-center">
+                <svg className="w-8 h-8 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+
+              {/* Step 2 */}
+              <div className="flex items-start gap-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">
+                  2
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-white mb-3">AI Analyzes & Identifies Components</h3>
+                  <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                    <p className="text-slate-300 text-lg mb-4">
+                      Our AI analyzes the entire diagram and identifies all infrastructure components
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="flex items-start gap-3">
+                        <span className="text-emerald-400 text-xl mt-1">✓</span>
+                        <div>
+                          <div className="font-semibold text-slate-200">Compute Resources</div>
+                          <div className="text-sm text-slate-400">EC2, Lambda, ECS containers</div>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-emerald-400 text-xl mt-1">✓</span>
+                        <div>
+                          <div className="font-semibold text-slate-200">Databases</div>
+                          <div className="text-sm text-slate-400">RDS, DynamoDB, ElastiCache</div>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-emerald-400 text-xl mt-1">✓</span>
+                        <div>
+                          <div className="font-semibold text-slate-200">Storage</div>
+                          <div className="text-sm text-slate-400">S3 buckets, EBS volumes</div>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-emerald-400 text-xl mt-1">✓</span>
+                        <div>
+                          <div className="font-semibold text-slate-200">Networking</div>
+                          <div className="text-sm text-slate-400">VPCs, subnets, load balancers</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="flex justify-center">
+                <svg className="w-8 h-8 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+
+              {/* Step 3 */}
+              <div className="flex items-start gap-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">
+                  3
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-white mb-3">AI Detects All Connections</h3>
+                  <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                    <p className="text-slate-300 text-lg mb-4">
+                      Every arrow in your diagram becomes a firewall rule, API connection, or data flow
+                    </p>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <span className="text-purple-400 text-xl">→</span>
+                        <span className="text-slate-300">App Server → Database = Firewall rule (Port 5432)</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="text-purple-400 text-xl">→</span>
+                        <span className="text-slate-300">Load Balancer → App Server = Target group</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="text-purple-400 text-xl">→</span>
+                        <span className="text-slate-300">App → S3 Bucket = IAM policy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="flex justify-center">
+                <svg className="w-8 h-8 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </div>
+
+              {/* Step 4 */}
+              <div className="flex items-start gap-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center text-white font-bold text-2xl flex-shrink-0">
+                  4
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-white mb-3">Complete Infrastructure Plan Generated</h3>
+                  <div className="bg-gradient-to-br from-emerald-500/10 to-primary-500/10 border border-emerald-500/30 rounded-xl p-6">
+                    <p className="text-slate-300 text-lg mb-4">
+                      All Service Requests (SRs) created with proper dependencies and execution order
+                    </p>
+                    <div className="grid md:grid-cols-3 gap-4">
+                      <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700">
+                        <div className="text-2xl font-bold text-primary-400 mb-1">60s</div>
+                        <div className="text-sm text-slate-400">Analysis Time</div>
+                      </div>
+                      <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700">
+                        <div className="text-2xl font-bold text-emerald-400 mb-1">100%</div>
+                        <div className="text-sm text-slate-400">Complete Coverage</div>
+                      </div>
+                      <div className="bg-slate-800/50 rounded-lg p-4 border border-slate-700">
+                        <div className="text-2xl font-bold text-orange-400 mb-1">Auto</div>
+                        <div className="text-sm text-slate-400">Execution Order</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Transition to example */}
+            <div className="mt-16 text-center">
+              <div className="inline-block px-6 py-3 bg-gradient-to-r from-primary-500/20 to-purple-500/20 border border-primary-500/30 rounded-full">
+                <span className="text-primary-300 font-semibold">Let&apos;s see one of the examples ↓</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -414,6 +579,119 @@ resource "aws_security_group_rule" "app_to_db" {
                       SR-003 never hardcoded Security Group IDs. It dynamically discovered them using semantic tags. This makes the system <span className="text-primary-400 font-semibold">resilient</span>, <span className="text-emerald-400 font-semibold">maintainable</span>, and <span className="text-purple-400 font-semibold">cloud-agnostic</span>.
                     </p>
                   </div>
+                </div>
+              </div>
+
+              {/* Key Insight: Different Tag Purposes */}
+              <div className="mt-6 bg-gradient-to-br from-orange-900/20 to-yellow-900/10 border border-orange-500/30 rounded-2xl p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-orange-500/20 rounded-full flex items-center justify-center">
+                    <span className="text-2xl">💡</span>
+                  </div>
+                  <h4 className="text-2xl font-bold text-orange-400">Key Insight: Tags Have Different Purposes</h4>
+                </div>
+
+                <p className="text-slate-300 text-lg mb-6 leading-relaxed">
+                  All SRs store tags in the <code className="text-primary-300 bg-slate-800 px-2 py-1 rounded">resource_tags</code> field, but they use them differently:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  {/* App/DB Tags */}
+                  <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <span className="text-2xl">🏷️</span>
+                      <h5 className="text-lg font-bold text-blue-400">App/DB SRs (SR-001, SR-002)</h5>
+                    </div>
+                    <div className="mb-4">
+                      <div className="text-sm text-slate-400 mb-2">Purpose of tags:</div>
+                      <div className="text-white font-semibold text-lg">
+                        &quot;What to call me&quot;
+                      </div>
+                      <div className="text-emerald-400 text-sm mt-1">
+                        Tags the resources they CREATE
+                      </div>
+                    </div>
+                    <div className="bg-slate-900 rounded-lg p-4 font-mono text-sm">
+                      <div className="text-slate-500 mb-2">// SR-001 creates App Server</div>
+                      <div className="text-slate-300">resource_tags: &#123;</div>
+                      <div className="text-slate-300 ml-4">
+                        ResourceName: <span className="text-primary-400">&quot;ecommerce-app-server&quot;</span>
+                      </div>
+                      <div className="text-slate-300">&#125;</div>
+                      <div className="text-emerald-400 mt-3 text-xs">
+                        ✓ Creates sg-0app123456<br/>
+                        ✓ APPLIES tag: ResourceName = &quot;ecommerce-app-server&quot;
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Firewall Tags */}
+                  <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <span className="text-2xl">🔗</span>
+                      <h5 className="text-lg font-bold text-orange-400">Firewall SR (SR-003)</h5>
+                    </div>
+                    <div className="mb-4">
+                      <div className="text-sm text-slate-400 mb-2">Purpose of tags:</div>
+                      <div className="text-white font-semibold text-lg">
+                        &quot;Who to connect&quot;
+                      </div>
+                      <div className="text-orange-400 text-sm mt-1">
+                        REFERENCES resources created by OTHER SRs
+                      </div>
+                    </div>
+                    <div className="bg-slate-900 rounded-lg p-4 font-mono text-sm">
+                      <div className="text-slate-500 mb-2">// SR-003 creates Firewall Rule</div>
+                      <div className="text-slate-300">resource_tags: &#123;</div>
+                      <div className="text-slate-300 ml-4">
+                        SourceResourceName: <span className="text-blue-400">&quot;ecommerce-app-server&quot;</span>
+                      </div>
+                      <div className="text-slate-300 ml-4">
+                        DestResourceName: <span className="text-purple-400">&quot;ecommerce-txn-db&quot;</span>
+                      </div>
+                      <div className="text-slate-300">&#125;</div>
+                      <div className="text-orange-400 mt-3 text-xs">
+                        ✓ SEARCHES for tag: ResourceName = &quot;ecommerce-app-server&quot;<br/>
+                        ✓ SEARCHES for tag: ResourceName = &quot;ecommerce-txn-db&quot;<br/>
+                        ✓ Creates rule connecting them
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* The Flow */}
+                <div className="bg-gradient-to-r from-primary-500/10 to-purple-500/10 border border-primary-500/30 rounded-xl p-6">
+                  <div className="font-semibold text-white mb-4 text-lg">The Complete Flow:</div>
+                  <div className="grid md:grid-cols-3 gap-4 text-sm">
+                    <div>
+                      <div className="text-primary-400 font-semibold mb-2">1. Storage (in database)</div>
+                      <div className="space-y-1 text-slate-300">
+                        <div>• SR-001: stores <code className="bg-slate-800 px-1 rounded text-xs">ResourceName</code></div>
+                        <div>• SR-002: stores <code className="bg-slate-800 px-1 rounded text-xs">ResourceName</code></div>
+                        <div>• SR-003: stores <code className="bg-slate-800 px-1 rounded text-xs">SourceResourceName</code> + <code className="bg-slate-800 px-1 rounded text-xs">DestResourceName</code></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-emerald-400 font-semibold mb-2">2. Execution (App/DB)</div>
+                      <div className="space-y-1 text-slate-300">
+                        <div>• SR-001: Uses <code className="bg-slate-800 px-1 rounded text-xs">ResourceName</code> to TAG sg-0app123456</div>
+                        <div>• SR-002: Uses <code className="bg-slate-800 px-1 rounded text-xs">ResourceName</code> to TAG sg-0db987654</div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-orange-400 font-semibold mb-2">3. Execution (Firewall)</div>
+                      <div className="space-y-1 text-slate-300">
+                        <div>• SR-003: Uses <code className="bg-slate-800 px-1 rounded text-xs">SourceResourceName</code> to SEARCH</div>
+                        <div>• SR-003: Uses <code className="bg-slate-800 px-1 rounded text-xs">DestResourceName</code> to SEARCH</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 p-4 bg-slate-900/50 border border-orange-500/20 rounded-lg">
+                  <p className="text-orange-300 font-semibold text-center">
+                    Both are stored in <code className="bg-slate-800 px-2 py-1 rounded text-primary-300">resource_tags</code> field, but serve different purposes!
+                  </p>
                 </div>
               </div>
             </div>
